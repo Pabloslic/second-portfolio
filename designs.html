@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pablo's Portfolio | Graphic Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">Pablo's Portfolio</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Websites</a>
+        <a class="active" href="designs.html">Graphic Design</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="section-heading">
+      <p class="eyebrow">Creative Showcase</p>
+      <h1>Graphic Design</h1>
+      <p>
+        Selected flyers, logo concepts, promo mockups, and sports graphics. Click any design to
+        open it in a larger view.
+      </p>
+    </div>
+
+    <section class="gallery-grid">
+      <button class="gallery-card" type="button" data-full="assets/designs/fashion-flyer.png" data-alt="Mathia's Pride clothing collection flyer">
+        <img src="assets/designs/fashion-flyer.png" alt="Mathia's Pride clothing collection flyer">
+        <span class="gallery-caption">Fashion Collection Flyer</span>
+      </button>
+      <button class="gallery-card" type="button" data-full="assets/designs/treasuregold-attachment-hub.png" data-alt="Treasuregold attachment hub flyer">
+        <img src="assets/designs/treasuregold-attachment-hub.png" alt="Treasuregold attachment hub flyer">
+        <span class="gallery-caption">Treasuregold Attachment Hub</span>
+      </button>
+      <button class="gallery-card" type="button" data-full="assets/designs/native-salad-poster.png" data-alt="Native Salad food poster">
+        <img src="assets/designs/native-salad-poster.png" alt="Native Salad food poster">
+        <span class="gallery-caption">Native Salad Poster</span>
+      </button>
+      <button class="gallery-card" type="button" data-full="assets/designs/treasure-jewelry-logo.png" data-alt="Treasure fine jewelry logo">
+        <img src="assets/designs/treasure-jewelry-logo.png" alt="Treasure fine jewelry logo">
+        <span class="gallery-caption">Treasure Jewelry Logo</span>
+      </button>
+      <button class="gallery-card" type="button" data-full="assets/designs/animal-phone-mockup.png" data-alt="Animal website phone mockup">
+        <img src="assets/designs/animal-phone-mockup.png" alt="Animal website phone mockup">
+        <span class="gallery-caption">Animal Website Mockup</span>
+      </button>
+      <button class="gallery-card" type="button" data-full="assets/designs/season-discount-post.png" data-alt="Season discount phone mockup post">
+        <img src="assets/designs/season-discount-post.png" alt="Season discount phone mockup post">
+        <span class="gallery-caption">Season Discount Post</span>
+      </button>
+      <button class="gallery-card" type="button" data-full="assets/designs/animal-uiux-banner.png" data-alt="Animal UI UX basics banner">
+        <img src="assets/designs/animal-uiux-banner.png" alt="Animal UI UX basics banner">
+        <span class="gallery-caption">Animal UI/UX Banner</span>
+      </button>
+      <button class="gallery-card" type="button" data-full="assets/designs/athens-trading-logo-alt.png" data-alt="Athens Trading logo concept on white background">
+        <img src="assets/designs/athens-trading-logo-alt.png" alt="Athens Trading logo concept on white background">
+        <span class="gallery-caption">Athens Trading Logo I</span>
+      </button>
+      <button class="gallery-card" type="button" data-full="assets/designs/athens-trading-logo.png" data-alt="Athens Trading logo concept on yellow card">
+        <img src="assets/designs/athens-trading-logo.png" alt="Athens Trading logo concept on yellow card">
+        <span class="gallery-caption">Athens Trading Logo II</span>
+      </button>
+      <button class="gallery-card" type="button" data-full="assets/designs/league-standings-post.png" data-alt="Chikamso League standings graphic">
+        <img src="assets/designs/league-standings-post.png" alt="Chikamso League standings graphic">
+        <span class="gallery-caption">League Standings Graphic</span>
+      </button>
+      <button class="gallery-card" type="button" data-full="assets/designs/matchday-fixtures-flyer.png" data-alt="Chikamso League matchday fixtures flyer">
+        <img src="assets/designs/matchday-fixtures-flyer.png" alt="Chikamso League matchday fixtures flyer">
+        <span class="gallery-caption">Matchday Fixtures Flyer</span>
+      </button>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image view">X</button>
+    <img id="lightboxImage" src="" alt="">
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 UDECHIME LAWRENCE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
