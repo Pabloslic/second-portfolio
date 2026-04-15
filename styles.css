@@ -355,7 +355,7 @@ h1 {
 }
 
 .project-grid {
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .project-card {
@@ -456,22 +456,7 @@ h1 {
 }
 
 .gallery-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 35%, rgba(18, 14, 12, 0.8) 100%);
-}
-
-.gallery-caption {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  padding: 1rem;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-align: left;
+  content: none;
 }
 
 .lightbox {
@@ -521,8 +506,11 @@ h1 {
 @media (max-width: 900px) {
   .hero,
   .intro-grid,
-  .project-grid,
   .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
